@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2251029568540877246}
   - component: {fileID: 2251029568541468222}
   - component: {fileID: 2251029568571698211}
+  - component: {fileID: 5098469199949401897}
   m_Layer: 0
   m_Name: FishProjectile
   m_TagString: Untagged
@@ -97,3 +98,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
+--- !u!114 &5098469199949401897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2251029568543964800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65e2c600f653dcb41bab400c41bf11d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  topBound: 30

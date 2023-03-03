@@ -31,9 +31,10 @@ public class PlayerController : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
 
+        // On spacebar press, a projectile will be launched.
         if(Input.GetKeyDown(KeyCode.Space))
         {
-
+            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
         }
     }
 }
