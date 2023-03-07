@@ -777,6 +777,8 @@ GameObject:
   - component: {fileID: 157630005886447953}
   - component: {fileID: 157630006376716675}
   - component: {fileID: 1673083281}
+  - component: {fileID: 6635968696482558213}
+  - component: {fileID: 7314577241277849757}
   m_Layer: 0
   m_Name: Doe
   m_TagString: Untagged
@@ -856,6 +858,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topBound: 30
   bottomBound: -10
+--- !u!65 &6635968696482558213
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157630005879153799}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.105753995, y: 0.36560425, z: 0.3860592}
+  m_Center: {x: -0.0003865719, y: 0.18030445, z: 0.0476285}
+--- !u!114 &7314577241277849757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157630005879153799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1de62a31a9eec4a478cabee3c8e5d709, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &157630005879222137
 GameObject:
   m_ObjectHideFlags: 0
