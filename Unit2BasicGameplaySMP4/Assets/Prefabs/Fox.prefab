@@ -1036,7 +1036,7 @@ GameObject:
   - component: {fileID: 3203969878264382630}
   m_Layer: 0
   m_Name: Fox
-  m_TagString: Untagged
+  m_TagString: Animal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1100,7 +1100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 800e707e40255c54aa429aa65201a4e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 15
 --- !u!114 &1989825968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1115,6 +1115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topBound: 30
   bottomBound: -10
+  sideBound: 30
 --- !u!65 &4101493562652622432
 BoxCollider:
   m_ObjectHideFlags: 0

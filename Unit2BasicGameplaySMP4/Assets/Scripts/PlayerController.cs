@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     public float dBorder = -2;
     public float uBorder = 16;
 
+    public Transform projectileSpawnPoint;
+
     public GameObject projectilePrefab;
 
     // Start is called before the first frame update
@@ -48,7 +50,7 @@ public class PlayerController : MonoBehaviour
         // On spacebar press, a projectile will be launched.
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+            Instantiate(projectilePrefab, projectileSpawnPoint.position, projectilePrefab.transform.rotation);
         }
     }
 }

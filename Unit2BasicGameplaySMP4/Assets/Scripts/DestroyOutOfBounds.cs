@@ -6,11 +6,13 @@ public class DestroyOutOfBounds : MonoBehaviour
 {
     public float topBound = 30;
     public float bottomBound = -10;
+    public float sideBound = 30;
+    private GameInterface gameInterface;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        gameInterface = GameObject.Find("GameInterface").GetComponent<GameInterface>();
     }
 
     // Update is called once per frame
@@ -22,9 +24,18 @@ public class DestroyOutOfBounds : MonoBehaviour
         }
         else if (transform.position.z < bottomBound)
         {
-            Debug.Log("Game Over!");
+            gameInterface.AddLives(-1);
             Destroy(gameObject);
         }
-        
+        else if(transform.position.x > sideBound)
+        {
+            gameInterface.AddLives(-1);
+            Destroy(gameObject);
+        }
+        else if(transform.position.x < -sideBound)
+        {
+            gameInterface.AddLives(-1);
+            Destroy(gameObject);
+        }
     }
 }

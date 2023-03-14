@@ -1209,7 +1209,7 @@ GameObject:
   - component: {fileID: -566038279982643255}
   m_Layer: 0
   m_Name: ChickenWhite
-  m_TagString: Untagged
+  m_TagString: Animal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1271,6 +1271,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topBound: 30
   bottomBound: -10
+  sideBound: 30
 --- !u!114 &3896611052434744771
 MonoBehaviour:
   m_ObjectHideFlags: 0
